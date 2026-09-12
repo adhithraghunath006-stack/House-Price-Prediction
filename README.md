@@ -1,6 +1,6 @@
 # 🏠 House Price Prediction Model
 
-### Machine Learning & AI Internship — SkillNexis
+                                ### Machine Learning & AI Internship — SkillNexis
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python" alt="Python">
@@ -178,8 +178,8 @@ The project follows a simple end-to-end Machine Learning pipeline:
                   └────────────────────────┘
 
 
-
 🔄 Machine Learning Workflow
+
 1️⃣ Load the Dataset
 
 The Kaggle train.csv dataset is loaded using Pandas.
