@@ -1,31 +1,33 @@
-```markdown
+ADHITH MAHAAN bhai 🔥 — **yeh raha pura `README.md` ek hi copy-paste mein**, properly structured, highlighted, architecture ke saath, images ke saath. Bas GitHub ke `README.md` mein pura paste kar de.
+
+````markdown
 # 🏠 House Price Prediction Model
 
 ### Machine Learning & AI Internship — SkillNexis
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python" alt="Python">
-  <img src="https://img.shields.io/badge/Machine%20Learning-Linear%20Regression-orange?style=for-the-badge" alt="Machine Learning">
-  <img src="https://img.shields.io/badge/Library-Pandas-green?style=for-the-badge&logo=pandas" alt="Pandas">
-  <img src="https://img.shields.io/badge/Library-Matplotlib-red?style=for-the-badge" alt="Matplotlib">
-  <img src="https://img.shields.io/badge/Library-Scikit--Learn-yellow?style=for-the-badge&logo=scikit-learn" alt="Scikit Learn">
-</p>
+> A Machine Learning project that predicts residential house prices using **Linear Regression** based on selected property features such as living area, bedrooms, bathrooms, and construction year.
 
-<p align="center">
-  <b>A Machine Learning project that predicts residential house prices using Linear Regression.</b>
-</p>
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Linear%20Regression-orange)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Processing-150458?logo=pandas)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557c)
+![Scikit Learn](https://img.shields.io/badge/Scikit--learn-ML-F7931E?logo=scikit-learn)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
 ---
 
 ## 👨‍💻 Author
 
-**Adhith Raghunathan Nair**  
-**B.Tech Computer Science & Engineering**  
-**Amity University Mumbai**  
+**Adhith Raghunathan Nair**
+
+🎓 **B.Tech Computer Science & Engineering**  
+🏫 **Amity University Mumbai**
+
+**Interests:** AI/ML • Web Development • Data Science • Emerging Technologies
 
 ---
 
-## 🎓 Internship Information
+## 📌 Internship Information
 
 | Field | Details |
 |---|---|
@@ -33,153 +35,152 @@
 | **Project** | Mini Project 2 |
 | **Project Title** | House Price Prediction Model |
 | **Domain** | Machine Learning |
-| **Model Used** | Linear Regression |
+| **Algorithm** | Linear Regression |
 | **Dataset** | Kaggle — House Prices Dataset |
 | **Programming Language** | Python |
+| **Status** | Completed |
 
 ---
 
-## 📌 Project Overview
+# 🎯 Project Objective
 
-The **House Price Prediction Model** is a Machine Learning project developed as part of the **SkillNexis Machine Learning & AI Internship**.
+The objective of this project is to build a basic **Machine Learning regression model** capable of predicting residential house prices using important property-related features.
 
-The main objective of this project is to build a simple and interpretable **Linear Regression model** capable of predicting residential house prices based on selected property characteristics.
+The project demonstrates an end-to-end Machine Learning workflow:
 
-The project follows a complete basic Machine Learning workflow — from loading and exploring the dataset to training the model, generating predictions, evaluating performance, and visualizing the results.
-
-The model uses four selected numerical features:
-- 🏠 `GrLivArea` — Above-ground living area
-- 🛏️ `BedroomAbvGr` — Number of bedrooms above ground
-- 🛁 `FullBath` — Number of full bathrooms
-- 📅 `YearBuilt` — Original construction year
-
-The target variable is:
-- 💰 `SalePrice` — Final sale price of the house
-
----
-
-## 🎯 Project Objectives
-
-- Load and explore the Kaggle House Prices dataset
-- Inspect the structure and dimensions of the dataset
-- Identify missing values
-- Select relevant numerical features
-- Prepare the data for Machine Learning
-- Divide the dataset into training and testing sets
-- Train a **Linear Regression** model
-- Predict house prices using unseen test data
-- Evaluate the model using **R² Score**
-- Compare actual and predicted house prices visually
-- Save prediction results into a CSV file
+- 📂 Loading the dataset
+- 🔍 Exploring the dataset
+- ⚠️ Identifying missing values
+- 🎯 Selecting relevant features
+- 🧹 Preparing data for modelling
+- ✂️ Splitting data into training and testing sets
+- 🤖 Training a Linear Regression model
+- 💰 Predicting house prices
+- 📈 Evaluating the model using R² Score
+- 📊 Visualizing actual vs predicted values
+- 📄 Exporting prediction results to CSV
 
 ---
 
-## 📊 Dataset
+# 📊 Dataset
 
 The project uses the **House Prices — Advanced Regression Techniques** dataset from Kaggle.
 
 The dataset contains information about residential properties along with their corresponding sale prices.
 
-### Dataset Statistics
+## Dataset Statistics
 
 | Property | Value |
 |---|---:|
 | **Total Records** | 1,460 |
-| **Total Features/Columns** | 81 |
+| **Total Columns** | 81 |
 | **Target Variable** | `SalePrice` |
 | **Training Samples** | 1,168 |
 | **Testing Samples** | 292 |
 
-### Selected Features
+---
 
-| Feature | Description | Type |
-|---|---|---|
-| `GrLivArea` | Above-ground living area | Numerical |
-| `BedroomAbvGr` | Number of bedrooms above ground | Numerical |
-| `FullBath` | Number of full bathrooms | Numerical |
-| `YearBuilt` | Original construction year | Numerical |
+# 🏡 Selected Features
+
+For this mini project, four numerical features were selected:
+
+| Feature | Description |
+|---|---|
+| `GrLivArea` | Above-ground living area |
+| `BedroomAbvGr` | Number of bedrooms above ground |
+| `FullBath` | Number of full bathrooms |
+| `YearBuilt` | Original construction year |
 
 ### Target Variable
 
-| Variable | Description |
-|---|---|
-| `SalePrice` | Final sale price of the residential property |
+```text
+SalePrice
+````
+
+The model learns the relationship between these property characteristics and the historical selling price.
 
 ---
 
-## 🏗️ Project Architecture
+# 🔄 Machine Learning Architecture
 
-The project follows a simple end-to-end Machine Learning pipeline:
+The project follows a simple and reproducible Machine Learning pipeline.
 
 ```text
-                    ┌──────────────────────┐
-                    │   Kaggle Dataset     │
-                    │      train.csv       │
-                    └──────────┬───────────┘
+                    ┌─────────────────────┐
+                    │   Kaggle Dataset    │
+                    │      train.csv      │
+                    └──────────┬──────────┘
                                │
                                ▼
-                    ┌──────────────────────┐
-                    │    Data Loading      │
-                    │       Pandas         │
-                    └──────────┬───────────┘
+                    ┌─────────────────────┐
+                    │   Data Loading      │
+                    │      Pandas         │
+                    └──────────┬──────────┘
                                │
                                ▼
-                    ┌──────────────────────┐
-                    │   Data Exploration   │
-                    │ Shape / Missing Data │
-                    └──────────┬───────────┘
+                    ┌─────────────────────┐
+                    │  Data Exploration   │
+                    │ Missing Value Check │
+                    └──────────┬──────────┘
                                │
                                ▼
-                    ┌──────────────────────┐
-                    │  Feature Selection   │
-                    │                      │
-                    │ • GrLivArea          │
-                    │ • BedroomAbvGr       │
-                    │ • FullBath           │
-                    │ • YearBuilt          │
-                    └──────────┬───────────┘
+                    ┌─────────────────────┐
+                    │ Feature Selection   │
+                    │                     │
+                    │ • GrLivArea         │
+                    │ • BedroomAbvGr      │
+                    │ • FullBath          │
+                    │ • YearBuilt         │
+                    └──────────┬──────────┘
                                │
                                ▼
-                    ┌──────────────────────┐
-                    │   Train-Test Split   │
-                    │                      │
-                    │ 80% Training         │
-                    │ 20% Testing          │
-                    └──────────┬───────────┘
+                    ┌─────────────────────┐
+                    │   Target Variable   │
+                    │     SalePrice       │
+                    └──────────┬──────────┘
                                │
                                ▼
-                    ┌──────────────────────┐
-                    │  Linear Regression   │
-                    │        Model         │
-                    └──────────┬───────────┘
+                    ┌─────────────────────┐
+                    │   Train-Test Split  │
+                    │                     │
+                    │ 80% Training        │
+                    │ 20% Testing         │
+                    └──────────┬──────────┘
                                │
                                ▼
-                    ┌──────────────────────┐
-                    │   Price Prediction   │
-                    │                      │
-                    │ Predicted SalePrice  │
-                    └──────────┬───────────┘
+                    ┌─────────────────────┐
+                    │  Linear Regression  │
+                    │       Model         │
+                    └──────────┬──────────┘
                                │
-                  ┌────────────┴────────────┐
-                  ▼                         ▼
-       ┌──────────────────┐       ┌────────────────────┐
-       │     R² Score     │       │ Actual vs Predicted│
-       │    Evaluation    │       │   Visualization    │
-       └────────┬─────────┘       └─────────┬──────────┘
-                │                           │
-                └────────────┬──────────────┘
-                             ▼
-                  ┌────────────────────────┐
-                  │ prediction_results.csv │
-                  └────────────────────────┘
-
+                               ▼
+                    ┌─────────────────────┐
+                    │  House Price        │
+                    │   Predictions       │
+                    └──────────┬──────────┘
+                               │
+                    ┌──────────┴──────────┐
+                    ▼                     ▼
+          ┌──────────────────┐   ┌────────────────────┐
+          │   R² Evaluation  │   │ Actual vs Predicted│
+          │     0.7062       │   │     Visualization  │
+          └──────────────────┘   └────────────────────┘
+                    │                     │
+                    └──────────┬──────────┘
+                               ▼
+                    ┌─────────────────────┐
+                    │   Output Files      │
+                    │                     │
+                    │ prediction_results  │
+                    │ actual_vs_predicted │
+                    └─────────────────────┘
 ```
 
 ---
 
-## 🔄 Machine Learning Workflow
+# 🧠 Machine Learning Workflow
 
-### 1️⃣ Load the Dataset
+## 1. Load the Dataset
 
 The Kaggle `train.csv` dataset is loaded using Pandas.
 
@@ -187,113 +188,159 @@ The Kaggle `train.csv` dataset is loaded using Pandas.
 import pandas as pd
 
 data = pd.read_csv("train.csv")
-
 ```
 
-The dataset contains 1,460 records and 81 columns.
+The dataset contains:
 
-### 2️⃣ Explore the Dataset
+```text
+1,460 rows
+81 columns
+```
 
-The dataset was inspected using:
+---
+
+## 2. Explore the Dataset
+
+The dataset was inspected using Pandas:
 
 ```python
 data.head()
 data.shape
 data.isnull().sum()
-
 ```
 
 This helped understand:
 
-* Number of rows and columns
+* Dataset dimensions
 * Available features
 * Target variable
 * Missing values
-* Dataset structure
-
-### 3️⃣ Handle Missing Values
-
-The dataset contains missing values in several columns. For this mini project, the selected prediction features were numerical and did not require extensive categorical preprocessing.
-
-The dataset was inspected for missing values before model training to ensure the selected inputs were suitable for the regression model.
-
-### 4️⃣ Feature Selection
-
-Four important features were selected:
-
-```python
-features = ["GrLivArea", "BedroomAbvGr", "FullBath", "YearBuilt"]
-
-```
-
-These features were chosen because they represent meaningful physical characteristics of a house that can influence its selling price.
-
-### 5️⃣ Define Target Variable
-
-The target variable was:
-
-```python
-target = "SalePrice"
-
-```
-
-The model learns to estimate `SalePrice` using the selected features.
-
-### 6️⃣ Train-Test Split
-
-The dataset was divided into training and testing sets.
-
-* **Training Data:** 80% (1,168 records)
-* **Testing Data:** 20% (292 records)
-
-The training data is used to teach the model, while the testing data evaluates how well the trained model performs on unseen data.
+* Overall dataset structure
 
 ---
 
-## 🤖 Linear Regression Model
+## 3. Check Missing Values
 
-The project uses Linear Regression, a supervised machine learning algorithm commonly used for predicting continuous numerical values.
+The dataset contains missing values in several columns.
 
-The basic idea is to learn a relationship between input features and the target house price.
+The project first checks missing values before selecting the features used by the regression model.
 
-```text
-House Features
-      │
-      ├── GrLivArea
-      ├── BedroomAbvGr
-      ├── FullBath
-      └── YearBuilt
-             │
-             ▼
-      Linear Regression
-             │
-             ▼
-       Predicted Price
-
+```python
+data.isnull().sum()
 ```
 
-The model was trained using Scikit-learn:
+The selected numerical features used for the model were suitable for the implemented workflow.
+
+---
+
+## 4. Feature Selection
+
+Four relevant numerical features were selected:
+
+```python
+features = [
+    "GrLivArea",
+    "BedroomAbvGr",
+    "FullBath",
+    "YearBuilt"
+]
+```
+
+These features represent important physical characteristics of a residential property.
+
+---
+
+## 5. Define the Target
+
+The target variable is:
+
+```python
+target = "SalePrice"
+```
+
+The model learns to estimate:
+
+```text
+House Features → SalePrice
+```
+
+---
+
+# ✂️ Train-Test Split
+
+The dataset was divided into training and testing data.
+
+```text
+Training Data → 80%
+Testing Data  → 20%
+```
+
+### Actual Split
+
+| Dataset     |   Records |
+| ----------- | --------: |
+| 🟢 Training |     1,168 |
+| 🔵 Testing  |       292 |
+| **Total**   | **1,460** |
+
+The training data is used to teach the model, while the testing data is used to evaluate its performance on unseen data.
+
+---
+
+# 🤖 Linear Regression Model
+
+The project uses **Linear Regression**, a supervised Machine Learning algorithm designed for predicting continuous numerical values.
+
+The model attempts to learn a mathematical relationship between the selected house features and the sale price.
+
+Conceptually:
+
+```text
+       House Features
+             │
+             ▼
+ ┌──────────────────────┐
+ │      Features        │
+ │                      │
+ │  GrLivArea           │
+ │  BedroomAbvGr        │
+ │  FullBath            │
+ │  YearBuilt           │
+ └──────────┬───────────┘
+            │
+            ▼
+ ┌──────────────────────┐
+ │  Linear Regression   │
+ │       Model          │
+ └──────────┬───────────┘
+            │
+            ▼
+ ┌──────────────────────┐
+ │ Predicted SalePrice  │
+ └──────────────────────┘
+```
+
+The model was implemented using Scikit-learn:
 
 ```python
 from sklearn.linear_model import LinearRegression
 
 model = LinearRegression()
-model.fit(X_train, y_train)
 
+model.fit(X_train, y_train)
 ```
 
 ---
 
-## 💰 House Price Prediction
+# 💰 House Price Prediction
 
-After training, the model was used to predict prices for the test dataset.
+After training, the model predicts prices for the test dataset.
 
 ```python
 predictions = model.predict(X_test)
-
 ```
 
-Example predictions generated by the model:
+Example predictions generated:
 
 ```text
 123619.10
@@ -306,229 +353,373 @@ Example predictions generated by the model:
 178012.94
 117291.77
 150770.20
-
 ```
 
-These values represent the estimated selling prices for houses in the testing dataset.
+These values represent estimated house selling prices for samples from the testing dataset.
 
 ---
 
-## 📈 Model Evaluation
+# 📈 Model Evaluation
 
-The model was evaluated using the **R² (R-squared) score**.
+The model was evaluated using the **R² (R-squared) Score**.
+
+### R² Score
 
 ```text
-R² Score: 0.7062392402008095
-
+0.7062392402008095
 ```
 
-### ⭐ Final R² Score
+## ⭐ Final Result
 
-$$\mathbf{R^2 = 0.7062}$$
+# **R² = 0.7062**
 
-An R² score of approximately **0.7062** indicates that the selected features and Linear Regression model explain a substantial portion of the variation in house sale prices within the test dataset.
+An R² score of approximately **0.7062** indicates that the selected features and Linear Regression model explain a substantial portion of the variation in house sale prices on the test dataset.
 
-Since this is a compact mini project using only four features, the result provides a useful baseline for further improvement.
+Since this implementation intentionally uses only four features, the result serves as a useful baseline for further experimentation and improvement.
 
 ---
 
-## 📊 Actual vs Predicted Visualization
+# 📊 Actual vs Predicted Visualization
 
-The project generates an **Actual vs Predicted** scatter plot to visually compare:
+The project generates a scatter plot comparing:
 
-* Actual house prices
-* Model-predicted house prices
+* 🔵 Actual house prices
+* 🟠 Predicted house prices
+
+The visualization helps evaluate how closely the model's predictions follow the actual sale prices.
 
 The closer the points are to the ideal diagonal relationship, the closer the predictions are to the actual values.
 
+### Visualization
+
+![Actual vs Predicted House Prices](actual_vs_predicted.png)
+
 ---
 
-## 📁 Project Structure
+# 📋 Prediction Results
+
+The project also exports prediction results into:
+
+```text
+prediction_results.csv
+```
+
+The file contains the actual and predicted house prices generated during testing.
+
+Example:
+
+| Actual SalePrice | Predicted SalePrice |
+| ---------------: | ------------------: |
+|           208500 |    Model Prediction |
+|           181500 |    Model Prediction |
+|           223500 |    Model Prediction |
+|           140000 |    Model Prediction |
+|           250000 |    Model Prediction |
+
+This makes it easy to inspect individual predictions and compare model output with the original values.
+
+---
+
+# 📁 Project Structure
 
 ```text
 House-Price-Prediction/
 │
-├── 📄 house_price_prediction.py  # Main machine learning implementation
-├── 📊 train.csv                  # Kaggle House Prices dataset
-├── 📈 actual_vs_predicted.png    # Actual vs Predicted visualization
-├── 📋 prediction_results.csv     # Actual and predicted house prices
-└── 📘 README.md                  # Project documentation
-
+├── 📄 house_price_prediction.py
+│   └── Main Machine Learning implementation
+│
+├── 📊 train.csv
+│   └── Kaggle House Prices dataset
+│
+├── 📈 actual_vs_predicted.png
+│   └── Actual vs Predicted visualization
+│
+├── 📋 prediction_results.csv
+│   └── Actual and predicted house prices
+│
+└── 📘 README.md
+    └── Project documentation
 ```
 
 ---
 
-## 🛠️ Technologies & Libraries
+# 🛠️ Technologies & Libraries
 
-* **Programming Language:** Python 3.x
-* **Data Processing:** Pandas, NumPy
-* **Machine Learning:** Scikit-Learn
-* **Visualization:** Matplotlib
+## 🐍 Programming Language
+
+**Python**
+
+Used for implementing the complete Machine Learning workflow.
+
+## 🐼 Data Processing
+
+**Pandas**
+
+Used for:
+
+* Dataset loading
+* Data inspection
+* Missing value analysis
+* Feature selection
+* Data manipulation
+
+## 🤖 Machine Learning
+
+**Scikit-learn**
+
+Used for:
+
+* Train-test splitting
+* Linear Regression
+* Model training
+* Prediction
+* R² evaluation
+
+## 📊 Visualization
+
+**Matplotlib**
+
+Used to generate the:
+
+```text
+Actual vs Predicted House Prices
+```
+
+visualization.
 
 ---
 
-## ⚙️ Installation & Setup
+# ⚙️ Installation & Setup
 
-### 1. Clone the Repository
+## 1️⃣ Clone the Repository
 
 ```bash
-git clone [https://github.com/adhithraghunath006-stack/House-Price-Prediction.git](https://github.com/adhithraghunath006-stack/House-Price-Prediction.git)
-cd House-Price-Prediction
-
+git clone https://github.com/adhithraghunath006-stack/House-Price-Prediction.git
 ```
 
-### 2. Install Required Libraries
+Navigate into the project:
+
+```bash
+cd House-Price-Prediction
+```
+
+---
+
+## 2️⃣ Install Dependencies
+
+Run:
 
 ```bash
 pip install pandas numpy matplotlib scikit-learn
-
 ```
 
-### 3. Run the Project
+---
+
+## 3️⃣ Run the Project
+
+Execute:
 
 ```bash
 python house_price_prediction.py
-
 ```
 
 The program will:
 
-* Load the dataset
-* Explore the data
-* Check missing values
-* Select features
-* Split training/testing data
-* Train Linear Regression
-* Generate predictions
-* Calculate R² score
-* Generate visualization
-* Save prediction results
+```text
+✓ Load the dataset
+✓ Explore the data
+✓ Check missing values
+✓ Select relevant features
+✓ Split training/testing data
+✓ Train Linear Regression
+✓ Generate predictions
+✓ Calculate R² Score
+✓ Generate visualization
+✓ Save prediction results
+```
 
 ---
 
-## 📋 Output Files
+# 📦 Output Files
 
 After successful execution, the project generates:
 
-1. `actual_vs_predicted.png` — Contains the visualization comparing actual and predicted house prices.
-2. `prediction_results.csv` — Contains the prediction results generated by the trained model.
+### 📈 `actual_vs_predicted.png`
 
-**Example CSV Structure:**
+A visualization comparing actual and predicted house prices.
 
-| Actual Price | Predicted Price |
-| --- | --- |
-| 208500 | 212450.30 |
-| 181500 | 179210.15 |
-| 223500 | 230110.80 |
+### 📋 `prediction_results.csv`
+
+A CSV file containing prediction results from the trained model.
 
 ---
 
-## 📊 Results Summary
+# 📊 Results Summary
 
-| Metric | Result |
-| --- | --- |
-| **Dataset Size** | 1,460 × 81 |
-| **Features Used** | 4 |
-| **Training Samples** | 1,168 |
-| **Testing Samples** | 292 |
-| **Algorithm** | Linear Regression |
-| **Evaluation Metric** | R² Score |
-| **Final R² Score** | **0.7062** |
+| Metric                | Result            |
+| --------------------- | ----------------- |
+| **Dataset Size**      | 1,460 × 81        |
+| **Features Used**     | 4                 |
+| **Training Samples**  | 1,168             |
+| **Testing Samples**   | 292               |
+| **Algorithm**         | Linear Regression |
+| **Target Variable**   | SalePrice         |
+| **Evaluation Metric** | R² Score          |
+| **R² Score**          | **0.7062**        |
 
 ---
 
-## 💡 Key Learnings
+# 💡 Key Learnings
 
-Through this project, the following machine learning concepts were practiced:
+This project provided practical experience with the fundamental stages of a Machine Learning pipeline.
 
-* Understanding a real-world dataset
-* Data exploration using Pandas
+### Data Handling
+
+* Understanding real-world datasets
+* Loading CSV files with Pandas
+* Inspecting dataset structure
 * Identifying missing values
+
+### Machine Learning
+
 * Feature selection
-* Separating features and target variables
+* Target variable selection
 * Train-test splitting
 * Supervised learning
 * Linear Regression
-* Model prediction
-* R² model evaluation
-* Data visualization
-* Exporting machine learning results
-* Organizing a complete ML project
+* Generating predictions
+
+### Model Evaluation
+
+* Understanding R² Score
+* Comparing predicted and actual values
+* Interpreting model performance
+
+### Data Visualization
+
+* Creating scatter plots
+* Visualizing model predictions
+* Understanding prediction behaviour
+
+### Project Development
+
+* Organizing an ML project
+* Saving generated outputs
+* Documenting the workflow
+* Using Git and GitHub for version control
 
 ---
 
-## 🚀 Future Improvements
+# 🚀 Future Improvements
 
-The current project provides a simple Linear Regression baseline. Its performance could potentially be improved by:
+The current implementation provides a simple Linear Regression baseline.
 
-* Using more relevant house features
-* Applying advanced feature engineering
-* Encoding categorical variables
-* Handling missing values more extensively
-* Detecting and treating outliers
-* Applying feature scaling where appropriate
-* Comparing multiple regression algorithms (Random Forest, XGBoost)
-* Performing hyperparameter tuning
-* Applying cross-validation
+The model could be further improved by:
 
-A more advanced version could therefore provide more accurate and robust house price predictions.
+* 🔹 Using additional relevant house features
+* 🔹 Applying advanced feature engineering
+* 🔹 Encoding categorical variables
+* 🔹 Handling missing values more extensively
+* 🔹 Detecting and treating outliers
+* 🔹 Applying feature scaling where appropriate
+* 🔹 Comparing multiple regression algorithms
+* 🔹 Implementing Random Forest Regression
+* 🔹 Implementing Gradient Boosting
+* 🔹 Experimenting with XGBoost
+* 🔹 Performing hyperparameter tuning
+* 🔹 Applying cross-validation
+* 🔹 Optimizing feature selection
+
+These improvements could potentially produce a more accurate and robust house price prediction system.
 
 ---
 
-## 🎓 Internship Context
+# 🎓 Internship Context
 
 This project was completed as part of the:
 
-* **Internship:** SkillNexis Machine Learning & AI Internship
-* **Assignment:** Mini Project 2
-* **Project Title:** House Price Prediction Model
+## **SkillNexis Machine Learning & AI Internship**
 
-The project demonstrates the practical implementation of fundamental machine learning concepts, from data preparation to model evaluation and visualization.
+### Mini Project 2 — House Price Prediction Model
+
+The project focuses on applying fundamental Machine Learning concepts to a real-world housing dataset.
+
+It demonstrates the complete journey from:
+
+```text
+Raw Dataset
+     ↓
+Data Exploration
+     ↓
+Feature Selection
+     ↓
+Train-Test Split
+     ↓
+Model Training
+     ↓
+Prediction
+     ↓
+Evaluation
+     ↓
+Visualization
+     ↓
+Results
+```
 
 ---
 
-## 🧠 Project Takeaway
+# 🧠 Project Takeaway
 
-This mini project demonstrates how a machine learning model can learn relationships between house characteristics and historical selling prices.
+This project demonstrates how a Machine Learning regression model can learn relationships between **house characteristics** and **historical selling prices**.
 
-Although the implementation uses a simple Linear Regression model with only four features, it establishes a complete and reproducible machine learning pipeline that can be expanded into a more advanced house price prediction system.
+Although the implementation uses a simple **Linear Regression model with four selected features**, it establishes a complete and reproducible Machine Learning pipeline.
+
+The achieved **R² score of 0.7062** provides a strong baseline for experimenting with additional features, feature engineering, and more advanced regression algorithms.
 
 ---
 
-## 👨‍💻 About Me
+# 👨‍💻 About Me
 
-**Adhith Raghunathan Nair**
+## **Adhith Raghunathan Nair**
 
 🎓 B.Tech Computer Science & Engineering
-
 🏫 Amity University Mumbai
 
-💡 AI/ML Enthusiast | Web Development | Computer Science
+I am a Computer Science student with an interest in building practical technology solutions across:
 
-I am interested in building practical technology solutions using Artificial Intelligence, Machine Learning, Web Development, and emerging technologies.
+* 🤖 Artificial Intelligence & Machine Learning
+* 🌐 Web Development
+* 📊 Data Science
+* 💻 Software Development
+* 🚀 Emerging Technologies
 
----
-
-## ⭐ Acknowledgements
-
-* **SkillNexis** — Machine Learning & AI Internship
-* **Kaggle** — House Prices Dataset
-* **Scikit-learn** — Machine Learning implementation
-* **Pandas** — Data processing
-* **Matplotlib** — Data visualization
+I enjoy turning ideas into functional projects while continuously exploring new technologies and improving my technical skills.
 
 ---
 
-## 📜 License
+# 🙏 Acknowledgements
 
-This project was developed for educational and internship purposes.
+Special thanks to:
+
+* 🎓 **SkillNexis** — Machine Learning & AI Internship
+* 📊 **Kaggle** — House Prices Dataset
+* 🤖 **Scikit-learn** — Machine Learning tools
+* 🐼 **Pandas** — Data processing
+* 📈 **Matplotlib** — Data visualization
 
 ---
 
-⭐ *If you found this project useful, feel free to explore the repository, review the implementation, and use the project as a reference for learning fundamental machine learning workflows.*
+# 📜 License
 
-**Built with Python & Machine Learning by Adhith Raghunathan Nair 🚀**
+This project was developed for **educational and internship purposes**.
 
-```
+The dataset used in this project is sourced from Kaggle.
 
-```
+---
+
+# ⭐ Repository
+
+If you found this project useful, feel free to explore the repository and review the implementation.
+
+**Built with Python, Machine Learning & curiosity 🚀**
+
