@@ -1,6 +1,3 @@
-ADHITH MAHAAN bhai 🔥 — **yeh raha pura `README.md` ek hi copy-paste mein**, properly structured, highlighted, architecture ke saath, images ke saath. Bas GitHub ke `README.md` mein pura paste kar de.
-
-````markdown
 # 🏠 House Price Prediction Model
 
 ### Machine Learning & AI Internship — SkillNexis
@@ -95,12 +92,6 @@ For this mini project, four numerical features were selected:
 
 ```text
 SalePrice
-````
-
-The model learns the relationship between these property characteristics and the historical selling price.
-
----
-
 # 🔄 Machine Learning Architecture
 
 The project follows a simple and reproducible Machine Learning pipeline.
